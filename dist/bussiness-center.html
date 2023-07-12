@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="home">
+
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="burger">
+                <div class="brg-cont">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="hidden-mob">
+                <div class="header-top-menu">
+                    <ul>
+                        <li><a href="">Бізнес Центр</a></li>
+                        <li><a href="">ТРЦ</a></li>
+                        <li><a href="">Хід будівництва</a></li>
+                        <li><a href="">Контакти</a></li>
+                        <li><a href="">+380 (67) 448 08 81</a></li>
+                        <li>
+                            <div class="lang">
+                                <span>EN</span>
+                                <ul>
+                                    <li><a href="">UKR</a></li>
+                                    <li><a href="">GER</a></li>
+                                    <li><a href="">FR</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang">
+                <span>EN</span>
+                <ul>
+                    <li><a href="">UKR</a></li>
+                    <li><a href="">GER</a></li>
+                    <li><a href="">FR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+<div class="hero-menu">
+    <div class="container">
+
+        <div class="hero-menu-cont">
+            <ul>
+                <li><a href="">Бізнес Центр</a></li>
+                <li><a href="">Торгівельно- Розважальний Центр</a></li>
+                <li><a href="">Архітектура</a></li>
+                <li><a href="">Інфраструктура</a></li>
+                <li><a href="">Хід Будивництва</a></li>
+                <li><a href="">Новини</a></li>
+                <li><a href="">Контакти</a></li>
+            </ul>
+
+
+        </div>
+        <div class="hero-socs">
+            <div class="socs">
+                <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+            </div>
+            <a href="" class="tel">+380 (67) 448 08 81</a>
+        </div>
+
+    </div>
+</div>
+<main>
+    <section class="hero-project">
+        <div class="img">
+            <img class="lazyload" data-src="./img/bussiness-1.jpg" alt="">
+        </div>
+
+        <div class="hero-project__text">
+            <div class="hero-project__left">
+                <h1 class="h2">Бізнес Центр</h1>
+                <span>«ТЕМП» – простір успішних людей</span>
+                <p><strong>Сучасні іноваційні та архітектурні рішення,</strong> відчуття простору, професійне
+                    планування, функціональність обʼєкту та навколишня інфраструктура, що відповідає міжнародній
+                    класифікації офісів класу «А». Це найвища оцінка офісної нерухомості у світі.</p>
+
+            </div>
+            <div class="hero-project__right">
+                <div class="hero-project__sizes">
+                    <p>6 500<strong>м<sup>2</sup></strong></p>
+                    <span>33 сучасних офісів класу «А»</span>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="structure">
+        <div class="container">
+            <h2 class="h2">Інфраструктура</h2>
+
+        </div>
+
+        <div class="structure-slider">
+            <div class="container">
+                <div class="structure-pagin">
+                    <div class="for-pagin" style="display: none !important;">
+                        <p>Продуктовий маркет</p>
+                        <p>Стріт рітейл та бутіки</p>
+
+                        <p>Сервісний кластер</p>
+                        <p>Панорамні ресторани</p>
+
+                        <p>Видові зони відпочинку</p>
+                        <p>СПА центр</p>
+
+                        <p>Тенісні корти</p>
+                        <p>Сквош</p>
+
+                        <p>Спортклуб</p>
+                        <p>Коворкінг</p>
+
+
+                    </div>
+                    <div class="dots">
+
+                    </div>
+                </div>
+            </div>
+            <div class="structure-container">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arr-w-r.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arr-w-r.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Продуктовий маркет</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str1.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Це найбільший у місті маркет площею 2 300 м2, унікальний асортимент товарів,
+                                        бонусна система знижок, турбота про кожного відвідувача. Це економія Вашого
+                                        часу, якісні товари та зручність.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Стріт рітейл та бутіки</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str6.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Три поверхи якісних товарів в на будь-який смак та вік.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Сервісний кластер</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str2.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Весь спекто послуг водному місці: хімчистка, оператори зв'язку, фінансові
+                                        послуги, копіцент, юридичні послуги.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Панорамні ресторани</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str7.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Ресторани з великою терасою і краєвидом на зелену частину міста. Місце сімейного
+                                        дозвілля, зустрічей з партнерами, та душевних розмов з друзями.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Видові зони відпочинку</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str3.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Maecenas elementum sed tortor congue
+                                        consequat et interdum. Diam magna nibh dictumst et blandit aliquet dignissim.
+                                        Scelerisque a nisl purus mauris volutpat mauris sagittis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>СПА центр</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str8.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Місце відпочинку та релаксу, з високий рівень обслуговування та сучасним
+                                        обладнання</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Тенісні корти</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str4.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Два великих критих тенісних корти з професійним покриттям дають можливість
+                                        займатись тенісом у будь-який час року та за будь-якої погоди. Роздягальні.
+                                        душові, кафе облаштовані для комфортного перебування.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Сквош</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str9.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Неповторні емоції від гри всквош з друзями, колегами чи партнерами – це гарна
+                                        можливість відволіктися від повсякденних турбот і зняти накопичену напругу.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Спортклуб</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str5.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Новітній спортивний клуб преміум класу – це сучасний технологічний тренажерний
+                                        зал, персональний підхід до кожного клієнта, індивідуальні тренування та зручний
+                                        графік роботи. 1 000 м2 задоволення та спорту.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-structure">
+                                <p>Коворкінг</p>
+                                <div class="img desk-only">
+                                    <img class="lazyload" data-src="./img/str10.jpg" alt="">
+                                </div>
+                                <div class="img mob-only">
+                                    <img class="lazyload" data-src="./img/strm1.jpg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p>Унікальна атмосфера місця налаштовує до старанної роботи і надихає на творчий
+                                        підхід. Швидкісний інтернет, якісне освітлення, комфортні місця для роботи,
+                                        запашна кава і смачний десерт все тут. Робочий простір облаштований в лаундж
+                                        зоні, на свіжому повітрі та в конференц залах, де можна працювати і
+                                        навчатися.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <div class="title-head">
+                <span class="h2">Новини</span>
+                <a href="" class="btn-dark-brown desk-only">Всi новини</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>3 чоловічих вправи, які будуть корисні і дівчатам.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw6.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Маркетолог розкрив секрет правильного шопінгу в " чорну п'ятницю».</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw7.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Осінній комплекс відновлювальних програм антистрес.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="" class="btn-dark-brown mob-only">Всi новини</a>
+        </div>
+
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-head">
+                <div class="left">
+                    <span class="h2">Контакти</span>
+                    <p>Заповність форму та ми вам зателефонуємо</p>
+                </div>
+                <div class="socs">
+                    <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="contacts-cont">
+            <div class="contacts-maps__single" data-location-x="49.43607191560438"
+                 data-location-y="27.015095870600106"></div>
+            <div class="contacts-map">
+                <div class="map-container">
+
+
+                </div>
+            </div>
+            <div class="contacts-form">
+                <div class="form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Iм'я*" required min="2">
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap input-tel">
+                            <label for=""></label>
+                            <input type="text" placeholder="Телефон*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="email" placeholder="Email*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Назва компанії" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <textarea name="" id="" placeholder="Коментар"></textarea>
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkbox-input">
+                                <label for="chk1"></label>
+                                <input type="radio" name="chk1" id="chk1" checked>
+                                <span>Купити</span>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="chk2"></label>
+                                <input type="radio" name="chk1" id="chk2">
+                                <span>Орендувати</span>
+                            </div>
+                        </div>
+                        <button class="btn-brown">Відправити</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="socs">
+                <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Бізнес Центр</a></li>
+                    <li><a href="">ТРЦ</a></li>
+                    <li><a href="">Хід будівництва</a></li>
+                    <li><a href="">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <a href="" class="tel">
+                    <img src="./img/ft1.svg" alt="">
+                    +380 (67) 448 08 81
+                </a>
+
+
+                <a href="">
+                    <img src="./img/ft2.svg" alt="">
+                    office@temp.km.ua
+                </a>
+                <p>
+                    <img src="./img/ft3.svg" alt="">
+                    Проспект Миру, 99/2А
+                </p>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <p class="copyr">© Temp 2023. All rights reserved.</p>
+
+            <div class="socs">
+                <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="modal-window" data-modal="login" style="display:none;">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="form form-login">
+                <form action="">
+                    <div class="input-wrap">
+                        <label for="">Електронна пошта чи телефон</label>
+                        <input type="text" value="youremail@gmail.com">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">Пароль</label>
+                        <input type="password" placeholder="">
+                    </div>
+
+                    <a href="" class="forgot-pass">Забули пароль?</a>
+
+                    <button class="btn btn--tel">увійти</button>
+                </form>
+
+                <p class="txt-no">Ще не маєте акаунту?</p>
+
+                <a href="" class="to-cart btn-mod" data-mod="register">зареєструватися</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal-window modal-window__video" data-modal="video">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-video">
+                <div class="vid-cont">
+                    <!--    controls="" -->
+                    <video poster="./img/poster-vid.jpg"
+                           src="./img/video-drones.mp4"
+
+                           loop="" playsinline="" type="video/mp4"></video>
+                    <div class="vid-play">
+                        <img src="./img/play-vid-ic.svg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal-window modal-window__plan" data-modal="plan">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-plan">
+                <div class="plan-top">
+                    <p>88 <strong>м<sup>2</sup></strong></p> <span> Ідеальний офіс для невеликих команд</span>
+                </div>
+                <div class="plan-center">
+                    <div class="img">
+                        <img src="./img/planm1.png" alt="">
+                    </div>
+                </div>
+                <div class="plan-bottom">
+                    <div class="panoram-btn btn-mod" data-mod="video">
+                        <div class="img">
+                            <img src="./img/panoram1.svg" alt="">
+                        </div>
+                        <p>Панорама з офісу</p>
+                    </div>
+                    <div class="btn-dark-brown btn-mod" data-mod="resident">Стати резидентом</div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal-window modal-window__present" data-modal="present">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-present">
+                <span>Презентація</span>
+
+                <div class="img">
+                    <img src="./img/dwnim.svg" alt="">
+                </div>
+
+                <a href="" class="btn-dark-brown" download>Скачати презентацiю</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-window modal-window__resident" data-modal="resident">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-form">
+                <span>Стати резидентом</span>
+                <div class="form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Iм'я*" required min="2">
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap input-tel">
+                            <label for=""></label>
+                            <input type="text" placeholder="Телефон*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="email" placeholder="Email*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Назва компанії" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <textarea name="" id="" placeholder="Коментар"></textarea>
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkbox-input">
+                                <label for="chk1"></label>
+                                <input type="radio" name="chk1" id="chk1" checked>
+                                <span>Купити</span>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="chk2"></label>
+                                <input type="radio" name="chk1" id="chk2">
+                                <span>Орендувати</span>
+                            </div>
+                        </div>
+                        <button class="btn-brown">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script type="text/javascript"  src="./libs/jquery.nice-select.min.js"></script>
+<script type="text/javascript"  src="./libs/jquery.raty.js"></script>
+<script type="text/javascript"  src="./libs/jq.maskedinput.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"> </script>
+<script src="https://unpkg.com/imask"></script>
+<script type="text/javascript" class="main-script" src="./js/scripts.min.js"></script>
+
+</body>
+</html>

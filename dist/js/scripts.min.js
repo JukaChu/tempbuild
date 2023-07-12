@@ -1,7 +1,3 @@
-
-
-
-
 var allLazyLoad = [...document.querySelectorAll('.lazyload')];
 
 function allLozadImg() {
@@ -22,6 +18,7 @@ allLozadImg();
 //lang control
 
 let langSpan = [...document.querySelectorAll('.lang > span')];
+
 function langControl() {
     if (langSpan.length) {
         langSpan.forEach((btn) => {
@@ -33,8 +30,6 @@ function langControl() {
 }
 
 langControl();
-
-
 
 
 var animStage = [...document.querySelectorAll('.anim-stage')];
@@ -162,6 +157,7 @@ getRaty();
 
 let headerMenu = [...document.querySelectorAll('.header-menu > ul > li')];
 let backDrop = document.querySelector('.backdrop');
+
 function hoverHeaderMenu() {
     if (headerMenu.length) {
         headerMenu.forEach((btn) => {
@@ -225,7 +221,7 @@ function startStructureSlider() {
                 cssMode: false,
 
                 autoplay: false,
-                spaceBetween:0,
+                spaceBetween: 0,
                 pagination: {
                     el: pagin,
                     type: 'bullets',
@@ -249,7 +245,6 @@ function startStructureSlider() {
                         slidesPerView: 1,
                     }
                 }
-
 
 
             });
@@ -327,7 +322,6 @@ function startNewsSlider() {
                 }
 
 
-
             });
 
 
@@ -342,9 +336,7 @@ startNewsSlider();
 //news
 
 
-
 //swipers
-
 
 
 //seo control
@@ -381,11 +373,8 @@ seoControl();
 //seo control
 
 
-
 var burger = [...document.querySelectorAll('.burger')];
 var header = document.querySelector('.header');
-
-
 
 
 function burgerControl() {
@@ -439,8 +428,9 @@ function controlModal() {
 
                             }, 500);
                         }
-                        if (mod.classList.contains('modal-video')) {
-                            mod.querySelector('iframe').src = btn.dataset.link;
+                        if (mod.classList.contains('modal-window__video')) {
+                            mod.querySelector('.vid-cont').classList.remove('hide');
+                            mod.querySelector('.vid-cont video').pause();
                         }
                     }
                 })
@@ -452,10 +442,9 @@ function controlModal() {
             btn.addEventListener('click', () => {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
-                if ( btn.closest('.modal-window').classList.contains('video')) {
-                    btn.closest('.modal-window').querySelector('.video-cont').classList.remove('playing');
-
-                    btn.closest('.modal-window').querySelector('.video-cont').innerHTML = '';
+                if ( btn.closest('.modal-window').classList.contains('modal-window__video')) {
+                    btn.closest('.modal-window').querySelector('.vid-cont').classList.remove('hide');
+                    btn.closest('.modal-window').querySelector('.vid-cont video').pause();
                 }
             })
         });
@@ -464,9 +453,9 @@ function controlModal() {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
 
-                if ( btn.closest('.modal-window').classList.contains('video')) {
-                    btn.closest('.modal-window').querySelector('.video-cont').classList.remove('playing');
-                    btn.closest('.modal-window').querySelector('.video-cont').innerHTML = '';
+                if ( btn.closest('.modal-window').classList.contains('modal-window__video')) {
+                    btn.closest('.modal-window').querySelector('.vid-cont').classList.remove('hide');
+                    btn.closest('.modal-window').querySelector('.vid-cont video').pause();
                 }
             })
         });
@@ -477,7 +466,7 @@ function controlModal() {
                     e.stopPropagation();
                     btn.closest('.modal-window').classList.remove('visible');
                     document.body.classList.remove('no-scroll');
-                    if ( btn.closest('.modal-window').classList.contains('video')) {
+                    if (btn.closest('.modal-window').classList.contains('video')) {
                         btn.closest('.modal-window').querySelector('.video-cont').classList.remove('playing');
 
                         btn.closest('.modal-window').querySelector('.video-cont').innerHTML = '';
@@ -531,7 +520,6 @@ changeTab();
 //tabs
 
 
-
 //faq
 let faqItems = [...document.querySelectorAll('.single-faq .faq-head')];
 
@@ -565,7 +553,6 @@ function ifHaveDots(x = cordsSelected[1], y = cordsSelected[0], zoom = 10) {
     if (!moveOnMapCity.length) {
 
     } else {
-
 
 
         // console.log(addressCoord);
@@ -624,13 +611,10 @@ function createMapBuy(x, y, zoom) {
     }
 
     map.addLayer(markers);
-    map.once('focus', function() { map.scrollWheelZoom.enable(); });
+    map.once('focus', function () {
+        map.scrollWheelZoom.enable();
+    });
 }
-
-
-
-
-
 
 
 function ifMapConsist() {
@@ -646,6 +630,7 @@ function ifMapConsist() {
     }
 
 }
+
 ifMapConsist();
 //map mag
 
@@ -661,5 +646,54 @@ tls.forEach((tl) => {
     var mask = IMask(tl, maskOptions);
 });
 
+
+//video control
+
+let vidCont = [...document.querySelectorAll('.vid-cont')];
+
+function videoControl() {
+    if (vidCont.length) {
+        vidCont.forEach((btn) => {
+            let vid = btn.querySelector('video');
+            let bt = btn.querySelector('.vid-play');
+
+            bt.addEventListener('click', () => {
+                btn.classList.add('hide');
+                vid.play();
+            })
+        })
+    }
+}
+
+videoControl();
+
+//video control
+
+//btn-go
+
+let btnGo = [...document.querySelectorAll('.btn-go')];
+
+function goBtnScroll() {
+    if (btnGo.length) {
+        btnGo.forEach((btn) => {
+            let dat = btn.dataset.go;
+
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $(`.${dat}`).offset().top - 170
+                    }, 600);
+
+                });
+
+
+
+        })
+    }
+}
+goBtnScroll();
+//btn-go
 
 

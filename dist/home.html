@@ -154,11 +154,11 @@
 
                 <ul>
                     <li>
-                        <a href="" class="btn-grey btn-mod" data-mod="3d"><img src="./img/cs-1.svg"
+                        <a href="" class="btn-grey btn-mod" data-mod="present"><img src="./img/cs-1.svg"
                                                                                alt="">Презентація</a>
                     </li>
                     <li>
-                        <a href="" class="btn-grey btn-mod" data-mod="3d"><img src="./img/cs-2.svg" alt="">Відео</a>
+                        <a href="" class="btn-grey btn-mod" data-mod="video"><img src="./img/cs-2.svg" alt="">Відео</a>
                     </li>
                     <li>
                         <a href="" class="btn-grey"><img src="./img/cs-3.svg" alt="">3D тур</a>
@@ -258,7 +258,7 @@
                             Біснес середовище класу А
                         </div>
                     </div>
-                    <a href="" class="btn-brown btn-go" data-go="footer">Отримати пропозицію</a>
+                    <a href="" class="btn-brown btn-go" data-go="contacts-form">Отримати пропозицію</a>
                 </div>
 
             </div>
@@ -333,7 +333,7 @@
                         <img class="lazyload" data-src="./img/bcenter3.jpg" alt="">
                     </div>
                 </div>
-                <a href="" class="btn-brown">Детальнiше</a>
+                <a href="" class="btn-dark-brown">Детальнiше</a>
             </div>
 
         </div>
@@ -386,7 +386,7 @@
                     </div>
 
                 </div>
-                <a href="" class="btn-brown">Детальнiше</a>
+                <a href="" class="btn-dark-brown">Детальнiше</a>
             </div>
         </div>
     </section>
@@ -631,7 +631,7 @@
         <div class="container">
             <div class="title-head">
                 <span class="h2">Новини</span>
-                <a href="" class="btn-brown desk-only">Всi новини</a>
+                <a href="" class="btn-dark-brown desk-only">Всi новини</a>
             </div>
         </div>
 
@@ -770,7 +770,7 @@
             </div>
         </div>
         <div class="container">
-            <a href="" class="btn-brown mob-only">Всi новини</a>
+            <a href="" class="btn-dark-brown mob-only">Всi новини</a>
         </div>
 
     </section>
@@ -894,7 +894,7 @@
             </div>
         </div>
         <div class="footer-bot">
-            <p class="copyr">© Temp 2023.  All rights reserved.</p>
+            <p class="copyr">© Temp 2023. All rights reserved.</p>
 
             <div class="socs">
                 <a href=""><img src="./img/fb-ic.svg" alt=""></a>
@@ -907,13 +907,17 @@
 </footer>
 
 
-<div class="modal-window" data-modal="login" style="display: none">
+<div class="modal-window" data-modal="login" style="display:none;">
     <div class="backplate">
 
     </div>
     <div class="modal-container">
         <div class="modal-head">
-            <p>Увійти</p>
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
             <div class="modal-close">
                 <span></span>
                 <span></span>
@@ -947,13 +951,17 @@
     </div>
 </div>
 
-<div class="modal-window" data-modal="register" style="display: none">
+<div class="modal-window modal-window__video" data-modal="video">
     <div class="backplate">
 
     </div>
     <div class="modal-container">
         <div class="modal-head">
-            <p>Зареєструватися</p>
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
             <div class="modal-close">
                 <span></span>
                 <span></span>
@@ -961,34 +969,33 @@
         </div>
 
         <div class="modal-cont">
-            <div class="form form-login">
-                <form action="">
-                    <div class="input-wrap">
-                        <label for="">Електронна пошта чи телефон</label>
-                        <input type="text" value="youremail@gmail.com">
-                    </div>
-                    <div class="input-wrap">
-                        <label for="">Пароль</label>
-                        <input type="password" placeholder="">
-                    </div>
+            <div class="modal-video">
+                <div class="vid-cont">
+                    <!--    controls="" -->
+                    <video poster="./img/poster-vid.jpg"
+                           src="./img/video-drones.mp4"
 
-                    <button class="btn btn--tel">зареєструватися</button>
-                </form>
+                           loop="" playsinline="" type="video/mp4"></video>
+                    <div class="vid-play">
+                        <img src="./img/play-vid-ic.svg" alt="">
+                    </div>
+                </div>
+
 
             </div>
-            <p class="rules">Створюючи профіль ви погоджуєтеся з <a href="">Умовами використання</a></p>
 
 
         </div>
     </div>
 </div>
-<div class="modal-window" data-modal="call" style="display: none">
+
+<div class="modal-window modal-window__plan" data-modal="plan">
     <div class="backplate">
 
     </div>
     <div class="modal-container">
         <div class="modal-head">
-            <p>Замовлення зворотнього дзвінка</p>
+
             <div class="modal-close">
                 <span></span>
                 <span></span>
@@ -996,69 +1003,25 @@
         </div>
 
         <div class="modal-cont">
-            <div class="form">
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Ваше ім'я *">
-                    </div>
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Ваш номер телефону *">
-                    </div>
-
-                    <button class="btn btn--tel">замовити дзвiнок</button>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="modal-window" data-modal="cart" style="display: none">
-    <div class="backplate">
-
-    </div>
-    <div class="modal-container">
-        <div class="modal-head">
-            <p>Товар додано до кошика</p>
-            <div class="modal-close">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div class="modal-cont">
-
-            <div class="cart-modal">
-                <div class="cart-modal-item">
+            <div class="modal-plan">
+                <div class="plan-top">
+                    <p>88 <strong>м<sup>2</sup></strong></p> <span> Ідеальний офіс для невеликих команд</span>
+                </div>
+                <div class="plan-center">
                     <div class="img">
-                        <img src="./img/prod-1.png" alt="">
+                        <img src="./img/planm1.png" alt="">
                     </div>
-
-                    <div class="text">
-                        <p>Масло моторне ELF 5W-40 Evolution 900 NF 4л ELF0069</p>
-                        <p><small></small></p>
-                        <div class="quantity-field">
-                            <div class="quantity__button quantity__button--minus">
-                                <button>-</button>
-                            </div>
-                            <div class="quantity">
-                                <label for=""></label>
-                                <input type="number" name="quantity[170]" value="1" min="0" step="1" size="1"
-                                       class="form-control">
-                            </div>
-                            <div class="quantity__button quantity__button--plus">
-                                <button>+</button>
-                            </div>
-
+                </div>
+                <div class="plan-bottom">
+                    <div class="panoram-btn btn-mod" data-mod="video">
+                        <div class="img">
+                            <img src="./img/panoram1.svg" alt="">
                         </div>
-                        <span>1 900 грн.</span>
+                        <p>Панорама з офісу</p>
                     </div>
-
+                    <div class="btn-dark-brown btn-mod" data-mod="resident">Стати резидентом</div>
                 </div>
 
-                <div class="cart-modal-links">
-                    <a href="" class="to-main">назад до магазину</a>
-                    <a href="" class="to-cart">перейти до кошика</a>
-                </div>
             </div>
 
 
@@ -1066,13 +1029,13 @@
     </div>
 </div>
 
-<div class="modal-window" data-modal="order" style="display: none">
+<div class="modal-window modal-window__present" data-modal="present">
     <div class="backplate">
 
     </div>
     <div class="modal-container">
         <div class="modal-head">
-            <p>Дякуємо Вам за виявлену довіру</p>
+
             <div class="modal-close">
                 <span></span>
                 <span></span>
@@ -1080,17 +1043,78 @@
         </div>
 
         <div class="modal-cont">
+            <div class="modal-present">
+                <span>Презентація</span>
 
-            <div class="cart-modal">
-                <p>Товар буде відправлений найближчим часом.</p>
+                <div class="img">
+                    <img src="./img/dwnim.svg" alt="">
+                </div>
 
-                <div class="cart-modal-links">
-                    <a href="" class="to-main">назад до магазину</a>
+                <a href="" class="btn-dark-brown" download>Скачати презентацiю</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="modal-window modal-window__resident" data-modal="resident">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-form">
+                <span>Стати резидентом</span>
+                <div class="form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Iм'я*" required min="2">
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap input-tel">
+                            <label for=""></label>
+                            <input type="text" placeholder="Телефон*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="email" placeholder="Email*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Назва компанії" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <textarea name="" id="" placeholder="Коментар"></textarea>
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkbox-input">
+                                <label for="chk1"></label>
+                                <input type="radio" name="chk1" id="chk1" checked>
+                                <span>Купити</span>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="chk2"></label>
+                                <input type="radio" name="chk1" id="chk2">
+                                <span>Орендувати</span>
+                            </div>
+                        </div>
+                        <button class="btn-brown">Відправити</button>
+                    </form>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
