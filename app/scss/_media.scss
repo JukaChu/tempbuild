@@ -28,6 +28,26 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .planning.planning-trade .container {
+    padding: 0 80px 0 219px;
+
+    .planning-tabs__head {
+      gap: 35px;
+    }
+  }
+  .planning.planning-trade .planning-business {
+    padding: 0;
+    width: calc(100% + 80px + 219px);
+    margin-left: -219px;
+  }
+  .design-interior-slider .slider-btn {
+    left: 83px;
+
+    &.slider-btn--next {
+      left: auto;
+      right: 83px;
+    }
+  }
   .hero-project__left {
     width: 942px;
   }
@@ -167,6 +187,10 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .h2 {
+    font-size: 60px;
+    line-height: 1.2;
+  }
   .hero-project__left {
     width: 850px;
     padding: 44px 50px 50px 219px;
@@ -199,6 +223,55 @@
 }
 
 @media screen and (max-width: 1315px) {
+  .planning.planning-trade .container {
+    padding: 0 44px;
+  }
+  .planning-central .swiper-slide {
+    width: 1688px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  .planning.planning-trade {
+    .planning-head {
+      flex-direction: row;
+    }
+
+    .planning-business {
+      padding: 0;
+      width: calc(100% + 88px);
+      margin-left: -44px;
+    }
+  }
+  .design-interior-slider .slider-btn {
+    left: 44px;
+
+    &.slider-btn--next {
+      left: auto;
+      right: 44px;
+    }
+  }
+
+  .planning {
+    .container {
+      padding: 0 44px;
+    }
+  }
+  .modal-gallery {
+    width: 80vw;
+  }
+  .modal-gallery .slider-btn {
+    width: 69px;
+    height: 24px;
+  }
+  .modal-gallery .dots {
+    bottom: 20px;
+  }
+  .design-head {
+    margin-bottom: 42px;
+  }
+  .design-main .container {
+    padding: 0 44px;
+  }
   .hero-project__right {
     padding: 24px 44px;
   }
@@ -384,11 +457,25 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero-project__left{
+  .planning.planning-trade .planning-head {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .planning-head {
+    margin-bottom: 30px;
+  }
+  .planning-head span {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  .hero-project__left {
     > span {
       font-size: 26px;
       line-height: 1.2;
     }
+
     > p {
       font-size: 16px;
       line-height: 1.2;
@@ -397,6 +484,7 @@
   .hero-project__sizes p {
     font-size: 60px;
     line-height: 1.2;
+
     strong {
       font-size: 24px;
       line-height: 1.2;
@@ -460,7 +548,7 @@
     }
   }
   .h2 {
-    font-size: 60px;
+    font-size: 54px;
     line-height: 1.2;
   }
   .center-home__block .tech-info {
@@ -528,8 +616,12 @@
     max-height: 255px;
   }
 }
+
 @media screen and (max-width: 1150px) {
-  .hero-project__left>span {
+  .design-interior-slider .slider-btn {
+    display: none;
+  }
+  .hero-project__left > span {
     margin: 15px 0 25px;
   }
   .hero-project__left {
@@ -537,6 +629,7 @@
     padding: 44px 44px 50px 44px;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .footer-bot .socs {
     gap: 40px;
@@ -546,6 +639,9 @@
   }
   .footer-bot .copyr {
     width: 40%;
+  }
+  .hero-project__right {
+    width: calc(100% - 620px);
   }
 }
 
@@ -727,6 +823,29 @@
 }
 
 @media screen and (max-width: 992px) {
+  .planning-head > span {
+    width: 100%;
+    text-align: center;
+  }
+  .planning {
+    padding-top: 62px;
+  }
+  .planning-head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    > span {
+      margin-bottom: 50px;
+    }
+  }
+  .hero-project__left {
+    width: 460px;
+  }
+  .hero-project__right {
+    width: calc(100% - 460px);
+    padding: 20px 44px 20px 20px;
+  }
   .modal-window.modal-window__video .modal-container {
     width: 90%;
   }
@@ -805,6 +924,65 @@
 }
 
 @media screen and (max-width: 860px) {
+  .planning-central .swiper-slide {
+    padding: 0 10px;
+    width: 1100px;
+  }
+  .planning.planning-trade .planning-business {
+    width: 100%;
+    margin-left: 0;
+  }
+  .planning.planning-trade .container .planning-tabs__head {
+    width: 100%;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .planning.planning-trade .container {
+    padding: 0;
+  }
+  .planning-cont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0 14px;
+  }
+  .planning-trade {
+    .planning-cont {
+      padding: 0;
+    }
+  }
+
+  .planning-cont .planning-left {
+    width: 100%;
+  }
+  .planning {
+    .container {
+      padding: 0;
+    }
+  }
+  .planning-head {
+    padding: 0 44px;
+  }
+  .planning-left {
+    width: 100%;
+  }
+  .planning-right {
+    width: 100%;
+    align-items: center;
+
+    > div {
+      margin-bottom: 40px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
   .modal-form {
     width: 100%;
   }
@@ -1067,6 +1245,27 @@
 }
 
 @media screen and (max-width: 767px) {
+  .hero-project__text {
+    margin-top: 0;
+  }
+  .hero-project__left {
+    width: 100%;
+  }
+  .hero-project__right {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 44px;
+  }
+  .hero-project__sizes {
+    p {
+      color: $main-color;
+    }
+
+    span {
+      color: $main-color;
+    }
+  }
   .modal-window {
     padding: 20px;
   }
@@ -1143,6 +1342,33 @@
 }
 
 @media screen and (max-width: 720px) {
+  .design-head {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .hero-project__text {
+    padding-bottom: 35px;
+  }
+  .hero-project__left {
+    padding: 36px 44px;
+  }
+  .hero-project__left > span {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+  .hero-project__sizes {
+    p {
+      font-size: 83px;
+
+      strong {
+        font-size: 32px;
+      }
+    }
+
+    span {
+      font-size: 26px;
+    }
+  }
   .modal-present {
     width: 540px;
     padding: 50px 30px;
@@ -1226,6 +1452,54 @@
 }
 
 @media screen and (max-width: 600px) {
+  .planning.planning-trade .container .planning-tabs__head {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+    gap: 25px;
+
+    .tab-btn {
+      width: calc((100% / 3) - (50px / 3));
+    }
+
+  }
+  .hero-project__sizes p {
+  }
+  .hero-project__sizes {
+    width: calc(100% + 40px);
+  }
+  .planning-tabs__head {
+    gap: 5px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .modal-gallery {
+    width: 100%;
+
+    .slider-btn {
+      left: 0;
+      transform: translate(0, -50%);
+
+      &.slider-btn--next {
+        right: 0;
+        transform: translate(0, -50%) rotate(180deg);
+      }
+    }
+  }
+  .modal-gallery {
+    height: 260px;
+  }
+  .design-main .container {
+    padding: 0 14px;
+  }
+  .design-interior-slider .swiper-slide {
+    width: 86%;
+
+    .img {
+      padding-top: 86.3%;
+    }
+  }
   .modal-form .form form .checkboxes {
     margin-bottom: 25px;
   }
@@ -1577,6 +1851,15 @@
 }
 
 @media screen and (max-width: 510px) {
+  .planning-right p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .hero-project .img {
+    height: 100vh;
+    min-height: 430px;
+    max-height: 650px;
+  }
   .modal-plan {
     padding: 50px 20px;
   }
@@ -1609,7 +1892,43 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .hero-project__sizes p {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+}
+
 @media screen and (max-width: 360px) {
+  .planning.planning-trade .container .planning-tabs__head {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .planning-tabs__head .tab-btn {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 14px;
+  }
+
+  .hero-project__left {
+    padding: 30px 20px 15px;
+  }
+  .hero-project__right {
+    padding: 0 20px;
+  }
+  .hero-project__sizes {
+    p {
+      font-size: 60px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+  .hero-project__sizes {
+    width: 100%;
+  }
   .modal-form .form form .checkboxes {
     flex-direction: column;
     align-items: flex-start;
@@ -1618,7 +1937,7 @@
   .modal-form {
     padding: 50px 20px;
   }
-  .modal-form>span, .modal-present span {
+  .modal-form > span, .modal-present span {
     font-size: 20px;
   }
   .footer {
@@ -1785,5 +2104,13 @@
       font-size: 14px;
       line-height: 1.2;
     }
+  }
+  .planning-head {
+    padding: 0 20px;
+  }
+  .planning-head > span {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 }

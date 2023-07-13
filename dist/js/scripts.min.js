@@ -336,6 +336,201 @@ startNewsSlider();
 //news
 
 
+//interior
+
+let interiorSlider = [...document.querySelectorAll('.design-interior-slider')];
+
+function startInteriorSlider() {
+    if (!interiorSlider.length) {
+
+    } else {
+
+
+        interiorSlider.forEach((sld) => {
+            let sldCont = sld.querySelector('.swiper');
+            let sldNext = sld.querySelector('.slider-btn--next');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                speed: 800,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+
+                touchRatio: 1,
+                touchAngle: 160,
+                followFinger: true,
+                allowTouchMove: true,
+                threshold: true,
+                touchMoveStopPropagation: true,
+                touchStartPreventDefault: true,
+                touchStartForcePreventDefault: true,
+                touchReleaseOnEdges: true,
+
+                resistance: true,
+                resistanceRatio: 0.3,
+                mousewheel: true,
+
+                autoplay: false,
+                spaceBetween: 14,
+                initialSlide: 3,
+
+                // pagination: {
+                //     el: pagin,
+                //     type: "progressbar",
+                // },
+
+
+            });
+
+
+        })
+
+    }
+}
+
+startInteriorSlider();
+
+
+//interior
+
+
+//interior modal
+
+let interiorSliderModal = [...document.querySelectorAll('.modal-gallery')];
+
+function startInteriorModalSlider() {
+    if (!interiorSliderModal.length) {
+
+    } else {
+
+
+        interiorSliderModal.forEach((sld) => {
+            let sldCont = sld.querySelector('.swiper');
+            let sldNext = sld.querySelector('.slider-btn--next');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
+            let pagin = sld.querySelector('.dots');
+
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                speed: 800,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+
+                touchRatio: 1,
+                touchAngle: 160,
+                followFinger: true,
+                allowTouchMove: true,
+                threshold: true,
+                touchMoveStopPropagation: true,
+                touchStartPreventDefault: true,
+                touchStartForcePreventDefault: true,
+                touchReleaseOnEdges: true,
+
+                resistance: true,
+                resistanceRatio: 0.3,
+                mousewheel: true,
+
+                autoplay: false,
+                spaceBetween: 14,
+
+
+                pagination: {
+                    el: pagin,
+                    type: 'bullets',
+                    bulletActiveClass: 'active',
+                    bulletClass: 'single-dot',
+                    bulletElement: 'div',
+                    clickable: true,
+                    currentClass: 'current',
+
+
+                },
+
+
+            });
+
+
+        })
+
+    }
+}
+
+startInteriorModalSlider();
+
+
+//interior modal
+
+//big-plan
+
+let bigPlanSlider = [...document.querySelectorAll('.planning-central')];
+
+function startPlanlSlider() {
+    if (!bigPlanSlider.length) {
+
+    } else {
+
+
+        bigPlanSlider.forEach((sld) => {
+            let sldCont = sld.querySelector('.swiper');
+
+
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                speed: 800,
+                centeredSlides: false,
+
+                touchRatio: 1,
+                touchAngle: 160,
+                followFinger: true,
+                allowTouchMove: true,
+                threshold: true,
+                touchMoveStopPropagation: true,
+                touchStartPreventDefault: true,
+                touchStartForcePreventDefault: true,
+                touchReleaseOnEdges: true,
+
+                resistance: true,
+                resistanceRatio: 0.3,
+                mousewheel: false,
+
+                autoplay: false,
+                spaceBetween: 14,
+                freeMode: true,
+                grabCursor: true,
+
+
+
+
+
+            });
+
+
+        })
+
+    }
+}
+
+startPlanlSlider();
+
+
+//big-plan
+
+
 //swipers
 
 
@@ -410,12 +605,16 @@ function controlModal() {
             let data = btn.dataset.mod;
 
             btn.addEventListener('click', (e) => {
-
+                let cd = '';
                 e.preventDefault();
                 e.stopPropagation();
 
                 if (document.querySelector('.modal-window.visible')) {
                     document.querySelector('.modal-window.visible').classList.remove('visible');
+                }
+                if (btn.dataset.code) {
+                    cd = btn.dataset.code;
+
                 }
                 modals.forEach((mod) => {
                     if (mod.dataset.modal === data) {
@@ -432,6 +631,9 @@ function controlModal() {
                             mod.querySelector('.vid-cont').classList.remove('hide');
                             mod.querySelector('.vid-cont video').pause();
                         }
+                        if (mod.classList.contains('modal-window__resident')) {
+                            mod.querySelector('.input-code-room input').value = cd;
+                        }
                     }
                 })
             })
@@ -442,7 +644,7 @@ function controlModal() {
             btn.addEventListener('click', () => {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
-                if ( btn.closest('.modal-window').classList.contains('modal-window__video')) {
+                if (btn.closest('.modal-window').classList.contains('modal-window__video')) {
                     btn.closest('.modal-window').querySelector('.vid-cont').classList.remove('hide');
                     btn.closest('.modal-window').querySelector('.vid-cont video').pause();
                 }
@@ -453,7 +655,7 @@ function controlModal() {
                 btn.closest('.modal-window').classList.remove('visible');
                 document.body.classList.remove('no-scroll');
 
-                if ( btn.closest('.modal-window').classList.contains('modal-window__video')) {
+                if (btn.closest('.modal-window').classList.contains('modal-window__video')) {
                     btn.closest('.modal-window').querySelector('.vid-cont').classList.remove('hide');
                     btn.closest('.modal-window').querySelector('.vid-cont video').pause();
                 }
@@ -482,35 +684,42 @@ controlModal();
 
 //tabs
 
-let tabBtn = [...document.querySelectorAll('.tab-btn')];
+let tabOwner = [...document.querySelectorAll('.tabs-owner')];
 
 function changeTab() {
-    if (!tabBtn.length) {
+    if (!tabOwner.length) {
 
     } else {
-        tabBtn.forEach((btn, k) => {
+        tabOwner.forEach((btn3, l) => {
 
-            btn.addEventListener('click', () => {
-                if (btn.classList.contains('active')) {
+            [...btn3.querySelectorAll('.tab-btn')].forEach((btn, k) => {
+                btn.addEventListener('click', () => {
 
-                } else {
-                    tabBtn.forEach((btn2) => {
-                        btn2.classList.remove('active');
-                    });
-                    btn.classList.add('active');
-                    if (btn.closest('.tabs-owner').querySelector('.standard-tab')) {
-                        btn.closest('.tabs-owner').querySelector('.standard-tab').classList.remove('active');
-                    }
-                    [...btn.closest('.tabs-owner').querySelectorAll('.item-tab')].forEach((tab, m) => {
-                        if (m === k) {
-                            tab.classList.add('active');
-                        } else {
-                            tab.classList.remove('active');
+                    if (btn.classList.contains('active')) {
 
+                    } else {
+                        [...btn3.querySelectorAll('.tab-btn')].forEach((btn2) => {
+                            btn2.classList.remove('active');
+                        });
+                        btn.classList.add('active');
+                        if (btn.closest('.tabs-owner').querySelector('.standard-tab')) {
+                            btn.closest('.tabs-owner').querySelector('.standard-tab').classList.remove('active');
                         }
-                    })
-                }
-            })
+
+
+                        [...btn.closest('.tabs-owner').querySelectorAll('.item-tab')].forEach((tab, m) => {
+                            if (m === k) {
+                                tab.classList.add('active');
+                            } else {
+                                tab.classList.remove('active');
+
+                            }
+                        })
+                    }
+                })
+            });
+
+
         })
     }
 }
@@ -678,21 +887,21 @@ function goBtnScroll() {
         btnGo.forEach((btn) => {
             let dat = btn.dataset.go;
 
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
 
-                    $([document.documentElement, document.body]).animate({
-                        scrollTop: $(`.${dat}`).offset().top - 170
-                    }, 600);
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $(`.${dat}`).offset().top - 170
+                }, 600);
 
-                });
-
+            });
 
 
         })
     }
 }
+
 goBtnScroll();
 //btn-go
 
