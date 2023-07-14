@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="home">
+
+//= details/header.html
+<main>
+    <section class="hero-project hero-project--timeline">
+        <div class="img">
+            <img class="lazyload" data-src="./img/timeline1.jpg" alt="">
+        </div>
+
+        <div class="hero-project__text">
+            <div class="hero-project__left">
+                <h1 class="h2">Хід Будівництва</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit tempus augue adipiscing elementum massa etiam eros.
+                    Ornare viverra enim at velit. Curabitur mattis pellentesque vulputate arcu. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="timelines">
+        <div class="container">
+            <div class="timelines-cont">
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>7 Квітня</span>
+                        <p>Розпочались роботи <br>по підготовці до скління торгівельного центру</p>
+                    </div>
+                    <div class="timeline-media">
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>23 Березня</span>
+                        <p>Будівництво монолітної конструкції вхідної групи бізнес центру</p>
+                    </div>
+                    <div class="timeline-media">
+                        <div class="img btn-mod" data-mod="video" data-link="./img/video-drones.mp4">
+                            <div class="vid-play">
+                                <img src="./img/play-vid-ic.svg" alt="">
+                            </div>
+                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>3 Березня</span>
+                        <p>П’ятий поверх бізнес центру: стяжка підлоги, встановлення та укріплення бетонних колон.</p>
+                    </div>
+                    <div class="timeline-media">
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>28 Лютого</span>
+                        <p>Ліфтова шахта складається з маси комплектуючих. У конструкцію обов’язково повинні входити
+                            приямок, огородження, двері та проріз для неї, стельове перекриття та блочне приміщення.</p>
+                    </div>
+                    <div class="timeline-media">
+
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>10 Лютого</span>
+                        <p>Бетонні сходинка виготовляється з міцного бетону та належить до класу екологічно чистих
+                            матеріалів.</p>
+                    </div>
+                    <div class="timeline-media">
+                        <div class="img btn-mod" data-mod="video" data-link="./img/video-drones.mp4">
+                            <div class="vid-play">
+                                <img src="./img/play-vid-ic.svg" alt="">
+                            </div>
+                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>16 Січня</span>
+                        <p>Наші будівельники працюють сумлінно та безперервно!Ось так відбувається процес залиття основи
+                            ліфтової.</p>
+                    </div>
+                    <div class="timeline-media">
+
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>15 Грудня</span>
+                        <p>Естетика будівництва🌇</p>
+
+                        <p>Поки Ви милуєтесь – ми продовжуємо будувати і робимо перекриття 4 поверху.🏗</p>
+                    </div>
+                    <div class="timeline-media">
+
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>9 Грудня</span>
+                        <p>Ми не зменшуємо оборотів та продовжуємо будівництво.</p>
+                        <p>Наразі встановлюються сходи між другими та третім поверхами</p>
+                    </div>
+                    <div class="timeline-media">
+
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="dots"></div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="single-timeline">
+                    <div class="txt">
+                        <span>28 Жовтня</span>
+                        <p>В цей нелегкий час, ми робимо все можливе, аби будівництво не зупинялось.</p>
+                        <p>Наразі встановлюються металеві конструкці, зроблено перекриття даху майбутніх тенісних
+                            кортів, а також продовжуються монолітні роботи.</p>
+                        <p>Слідкуйте за новинами, адже надалі будемо відкривати все більше деталей та знайомити з
+                            концептом ТРЦ</p>
+                    </div>
+                    <div class="timeline-media">
+
+                        <div class="timeline-slider">
+                            <div class="btns">
+                                <div class="slider-btn slider-btn--prev">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                                <div class="slider-btn slider-btn--next">
+                                    <img src="./img/arrnewright.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="dots"></div>
+
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml9.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img">
+                                            <img class="lazyload" data-src="./img/tml8.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="news-section">
+        <div class="container">
+            <div class="title-head">
+                <span class="h2">Новини</span>
+                <a href="" class="btn-dark-brown desk-only">Всi новини</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>3 чоловічих вправи, які будуть корисні і дівчатам.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw6.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Маркетолог розкрив секрет правильного шопінгу в " чорну п'ятницю».</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw7.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Осінній комплекс відновлювальних програм антистрес.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="" class="btn-dark-brown mob-only">Всi новини</a>
+        </div>
+
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-head">
+                <div class="left">
+                    <span class="h2">Контакти</span>
+                    <p>Заповність форму та ми вам зателефонуємо</p>
+                </div>
+                <div class="socs">
+                    <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="contacts-cont">
+            <div class="contacts-maps__single" data-location-x="49.43607191560438"
+                 data-location-y="27.015095870600106"></div>
+            <div class="contacts-map">
+                <div class="map-container">
+
+
+                </div>
+            </div>
+            <div class="contacts-form">
+                <div class="form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Iм'я*" required min="2">
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap input-tel">
+                            <label for=""></label>
+                            <input type="text" placeholder="Телефон*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="email" placeholder="Email*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Назва компанії" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <textarea name="" id="" placeholder="Коментар"></textarea>
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkbox-input">
+                                <label for="chk1"></label>
+                                <input type="radio" name="chk1" id="chk1" checked>
+                                <span>Купити</span>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="chk2"></label>
+                                <input type="radio" name="chk1" id="chk2">
+                                <span>Орендувати</span>
+                            </div>
+                        </div>
+                        <button class="btn-brown">Відправити</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+<div class="modal-window modal-window__gallery " data-modal="inter">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="modal-window modal-window__gallery" data-modal="extr">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img ">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+
+</body>
+</html>

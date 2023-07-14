@@ -472,6 +472,80 @@ startInteriorModalSlider();
 
 //interior modal
 
+
+//interior modal
+
+let timelinesSlider = [...document.querySelectorAll('.timeline-slider')];
+
+function startTimelineSlider() {
+    if (!timelinesSlider.length) {
+
+    } else {
+
+
+        timelinesSlider.forEach((sld) => {
+            let sldCont = sld.querySelector('.swiper');
+            let sldNext = sld.querySelector('.slider-btn--next');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
+            let pagin = sld.querySelector('.dots');
+
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                speed: 800,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+
+                touchRatio: 1,
+                touchAngle: 160,
+                followFinger: true,
+                allowTouchMove: true,
+                threshold: true,
+                touchMoveStopPropagation: true,
+                touchStartPreventDefault: true,
+                touchStartForcePreventDefault: true,
+                touchReleaseOnEdges: true,
+
+                resistance: true,
+                resistanceRatio: 0.3,
+                mousewheel: true,
+
+                autoplay: false,
+                spaceBetween: 14,
+
+
+                pagination: {
+                    el: pagin,
+                    type: 'bullets',
+                    bulletActiveClass: 'active',
+                    bulletClass: 'single-dot',
+                    bulletElement: 'div',
+                    clickable: true,
+                    currentClass: 'current',
+
+
+                },
+
+
+            });
+
+
+        })
+
+    }
+}
+
+startTimelineSlider();
+
+
+//interior modal
+
+
 //big-plan
 
 let bigPlanSlider = [...document.querySelectorAll('.planning-central')];
@@ -630,9 +704,17 @@ function controlModal() {
                         if (mod.classList.contains('modal-window__video')) {
                             mod.querySelector('.vid-cont').classList.remove('hide');
                             mod.querySelector('.vid-cont video').pause();
+                            mod.querySelector('.vid-cont video').src = btn.dataset.link;
                         }
                         if (mod.classList.contains('modal-window__resident')) {
                             mod.querySelector('.input-code-room input').value = cd;
+                        }
+                        if (mod.classList.contains('modal-window__plan')) {
+                            let im = btn.dataset.src;
+                            let metr = btn.dataset.metr;
+                            mod.querySelector('.plan-center .img').src = im;
+                            mod.querySelector('.plan-top > p > small').innerHTML = metr;
+
                         }
                     }
                 })
