@@ -1,9 +1,9 @@
 .anim {
   animation-fill-mode: forwards !important;
   opacity: 0;
-  transition: all 0.4s ease;
+  //transition: all 0.4s ease;
   &.single-project {
-    transition: all 0.4s ease;
+    //transition: all 0.4s ease;
     &.done {
       opacity: 1 !important;
     }
@@ -22,7 +22,6 @@
   100% {
     transform: scale(1);
     opacity: 1;
-    color: #00F5C9;
   }
 }
 

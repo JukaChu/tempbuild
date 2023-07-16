@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="home">
+
+//= details/header.html
+<main>
+    <section class="contacts-hero">
+        <div class="img">
+            <img class="lazyload" data-src="./img/contacts-hero.jpg" alt="">
+        </div>
+
+        <div class="txt  anim" data-anim-delay="210" data-anim-duration="960"
+             data-anim="fade-up">
+            <h1 class="h2">Контакти</h1>
+        </div>
+    </section>
+
+    <section class="contacts-page">
+        <div class="container">
+            <div class="contacts-page__cont">
+
+                <div class="contacts-page__form">
+                    <div class="contacts-page__top  anim-stage" data-anim-delay="170" data-anim-duration="920"
+                         data-anim="fade-up-2">
+                        <p>Зв'яжіться з нами</p>
+                        <a href="" class="tel"><img src="./img/callto.svg" alt=""> +380 (67) 448 08 81</a>
+
+                        <p>або заповніть форму, та ми вам зателефонуємо</p>
+                    </div>
+                    <div class="contacts-form  anim" data-anim-delay="210" data-anim-duration="960"
+                         data-anim="fade-up">
+                        <div class="form">
+                            <form action="">
+                                <div class="input-wrap">
+                                    <label for=""></label>
+                                    <input type="text" placeholder="Iм'я*" required min="2">
+                                    <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                                </div>
+                                <div class="input-wrap input-tel">
+                                    <label for=""></label>
+                                    <input type="text" placeholder="Телефон*" required>
+                                    <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for=""></label>
+                                    <input type="email" placeholder="Email*" required>
+                                    <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for=""></label>
+                                    <input type="text" placeholder="Назва компанії" required>
+                                    <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for=""></label>
+                                    <textarea name="" id="" placeholder="Коментар"></textarea>
+                                </div>
+
+                                <div class="checkboxes">
+                                    <div class="checkbox-input">
+                                        <label for="chk1"></label>
+                                        <input type="radio" name="chk1" id="chk1" checked>
+                                        <span>Купити</span>
+                                    </div>
+                                    <div class="checkbox-input">
+                                        <label for="chk2"></label>
+                                        <input type="radio" name="chk1" id="chk2">
+                                        <span>Орендувати</span>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button class="btn-dark-brown">Відправити</button>
+
+                                    <div class="socs">
+                                        <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                                        <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                                        <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts">
+        <div class="contacts-cont">
+            <div class="contacts-maps__single" data-location-x="49.43607191560438"
+                 data-location-y="27.015095870600106"></div>
+            <div class="contacts-map">
+                <div class="map-container">
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</main>
+<div class="modal-window modal-window__gallery " data-modal="inter">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="modal-window modal-window__gallery" data-modal="extr">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img ">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+
+</body>
+</html>

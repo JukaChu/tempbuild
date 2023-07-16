@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="home">
+
+//= details/header.html
+<main>
+    <section class="article-hero">
+        <div class="img">
+            <img  class="lazyload" srcset="./img/article-img.jpg 1200w, ./img/article2.jpg 900w " data-src="./img/article-img.jpg" alt="">
+        </div>
+        <div class="article-text anim" data-anim-delay="210" data-anim-duration="960"
+             data-anim="fade-up">
+            <h1 class="h3">Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                шиї!</h1>
+        </div>
+    </section>
+
+    <section class="article-block">
+        <div class="container">
+            <div class="article-cont">
+                <p><small>21 квiтня 2023</small></p>
+
+                <h5>Lorem ipsum dolor sit amet consectetur. Facilisis quis ultrices quisque semper nunc risus in
+                    viverra. Mattis ut a bibendum neque. Varius ut erat diam fames diam vel velit amet. Augue vulputate
+                    viverra pellentesque nascetur lacus porttitor. Nibh sed cursus feugiat elit ut dui ipsum donec
+                    cras.</h5>
+                <p>Purus non pulvinar tellus urna. Nisl rutrum elementum pretium odio ultrices tincidunt interdum est
+                    egestas. Tempus fermentum nibh non donec nunc. Enim tempus magna scelerisque volutpat. Nisi est ac
+                    id leo arcu mauris platea amet. Pharetra est malesuada ipsum magna mi feugiat commodo in. Id sit
+                    lectus orci libero odio at neque. Non commodo blandit sit et a nisi ultrices arcu elementum. Nibh
+                    accumsan lobortis euismod urna. Dictumst convallis mattis volutpat vel pellentesque nibh pretium
+                    mauriset.</p>
+
+                <h5>Neque pellentesque iaculis gravida eget diam gravida</h5>
+                <p>Sollicitudin fusce maecenas egestas ornare donec blandit. Lectus enim in magnis egestas cursus
+                    massa. Eget urna nisl fermentum egestas risus varius. In elementum cursus mi egestas vitae volutpat.
+                    Id et malesuada ac nisl. Fringilla duis nibh aliquet sed non a. Sed sit eu nunc eu tellus nibh amet
+                    cursus egestas. Fermentum pellentesque diam odio tortor massa id in. Sit amet erat augue eget diam
+                    gravida. Viverra at accumsan euismod et nulla. Neque pellentesque iaculis gravida eget diam gravida.
+                    Sed viverra tortor fames vitae tincidunt sit ut. Aliquam porta neque feugiat in blandit eu mattis
+                    quisque. Dui facilisis non volutpat blandit nullam sit facilisi ut. Sit arcu commodo semper fames
+                    sollicitudin ut venenatis.
+                </p>
+                <img  srcset="./img/article-post.jpg 1200w, ./img/article-post2.jpg 900w " src="./img/article-post.jpg"alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur. Risus eget vulputate sit nisl quam tortor. In aliquet lacus
+                    aenean sodales. Vestibulum vel facilisis volutpat enim vitae aliquam. Imperdiet mauris proin auctor
+                    convallis auctor sed elementum. Habitasse vestibulum morbi fringilla lacus. Commodo sit purus cursus
+                    ipsum ornare viverra diam. Risus tortor ultricies ut sit. Amet purus id condimentum elementum quam
+                    pellentesque.</p>
+                <p> Maecenas amet nullam luctus quis consequat morbi odio neque. Arcu ut lacus pulvinar scelerisque
+                    risus eu non vestibulum. Pulvinar egestas hac in imperdiet. Ultrices rhoncus orci est tellus
+                    imperdiet habitasse. Id posuere varius mauris id a suspendisse quam nec. Mi fringilla sed ultrices
+                    risus vivamus cursus scelerisque. Ultrices amet neque lectus sed lobortis aenean. Ac nec pretium
+                    tincidunt mauris sagittis lacus. Urna feugiat eget amet sagittis hendrerit lorem integer nunc
+                    aliquam. Amet massa gravida vitae ultrices. Odio ut quisque at vel feugiat. Suspendisse a commodo
+                    molestie in aliquet tellus. Non laoreet accumsan netus non ullamcorper pulvinar odio.</p>
+
+                <h6>Tristique mi eu curabitur sit</h6>
+                <p>Adipiscing purus sodales aliquet mauris. Libero pellentesque mi felis nunc netus pharetra. Faucibus
+                    malesuada quam nunc nec. Elementum massa commodo sit nulla bibendum dui. A sit volutpat sem ac magna
+                    ut enim. Nullam cursus tincidunt pellentesque libero lacus adipiscing. Dolor malesuada nisi viverra
+                    tempor in velit donec egestas. Quam quisque nulla faucibus consectetur sed feugiat mauris aliquam.
+                    Scelerisque habitasse fusce non dapibus. Augue est morbi maecenas massa viverra ut mollis
+                    pellentesque nisi.</p>
+                <p>Sed lacus ac at vitae enim amet. Tristique mi eu curabitur sit. Ultrices at pharetra tincidunt
+                    pharetra bibendum cursus gravida. Consectetur elementum vel risus morbi. Et euismod vitae mi sit
+                    felis. Lobortis sed molestie eget id turpis. Posuere sed accumsan nec facilisi.</p>
+                <p>Sagittis lectus quisque proin orci risus sed non donec turpis. Vel tempor sit scelerisque bibendum
+                    sem eu habitant magna. Dictum amet quam quisque purus. Iaculis ut ullamcorper ultricies risus. Massa
+                    luctus enim aliquet adipiscing nam.</p>
+                <p>Et ut quam suspendisse sed fringilla. Magna lorem tincidunt nisl eget nunc tempor amet varius
+                    viverra. Volutpat amet elit dolor aliquet diam proin ultricies ut id. In interdum pulvinar egestas
+                    purus ac pellentesque lacus pharetra vel. Mi nunc viverra.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <div class="title-head anim-stage" data-anim-delay="110" data-anim-duration="730"
+                 data-anim="fade-up">
+                <span class="h2">Новини</span>
+                <a href="" class="btn-dark-brown desk-only">Всi новини</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>3 чоловічих вправи, які будуть корисні і дівчатам.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw6.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Маркетолог розкрив секрет правильного шопінгу в " чорну п'ятницю».</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw7.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Осінній комплекс відновлювальних програм антистрес.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Звісно, що в ТРЦ Темп будуть кав'ярні різних форматів, де відвідувачі зможуть випити
+                                    ранкову каву.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Яка роль супермаркета в ТРЦ?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Коворкінг центр — це спільний робочий простір для комфортної роботи офісних
+                                    працівників.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="single-news">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/nw4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>21 квiтня 2023</span>
+                                <p>Великий теніс дозволяє одночасно задіювати велику кількість м'язів спини, рук, ніг та
+                                    шиї!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="" class="btn-dark-brown mob-only">Всi новини</a>
+        </div>
+
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-head anim-stage" data-anim-delay="160" data-anim-duration="860"
+                 data-anim="fade-up">
+                <div class="left">
+                    <span class="h2">Контакти</span>
+                    <p>Заповність форму та ми вам зателефонуємо</p>
+                </div>
+                <div class="socs">
+                    <a href=""><img src="./img/fb-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/inst-ic.svg" alt=""></a>
+                    <a href=""><img src="./img/yt-ic.svg" alt=""></a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="contacts-cont">
+            <div class="contacts-maps__single" data-location-x="49.43607191560438"
+                 data-location-y="27.015095870600106"></div>
+            <div class="contacts-map">
+                <div class="map-container">
+
+
+                </div>
+            </div>
+            <div class="contacts-form anim" data-anim-delay="110" data-anim-duration="860"
+                 data-anim="fade">
+                <div class="form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Iм'я*" required min="2">
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap input-tel">
+                            <label for=""></label>
+                            <input type="text" placeholder="Телефон*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="email" placeholder="Email*" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <input type="text" placeholder="Назва компанії" required>
+                            <div class="text-danger">Це поле є обов'язковим до заповнення</div>
+                        </div>
+                        <div class="input-wrap">
+                            <label for=""></label>
+                            <textarea name="" id="" placeholder="Коментар"></textarea>
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkbox-input">
+                                <label for="chk1"></label>
+                                <input type="radio" name="chk1" id="chk1" checked>
+                                <span>Купити</span>
+                            </div>
+                            <div class="checkbox-input">
+                                <label for="chk2"></label>
+                                <input type="radio" name="chk1" id="chk2">
+                                <span>Орендувати</span>
+                            </div>
+                        </div>
+                        <button class="btn-brown">Відправити</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+<div class="modal-window modal-window__gallery " data-modal="inter">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/inter3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="modal-window modal-window__gallery" data-modal="extr">
+    <div class="backplate">
+
+    </div>
+    <div class="modal-container">
+        <div class="modal-head">
+            <div class="log">
+                <a href="">
+                    <img src="./img/logom.svg" alt="">
+                </a>
+            </div>
+            <div class="modal-close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="modal-cont">
+            <div class="modal-gallery">
+                <div class="btns">
+                    <div class="slider-btn slider-btn--prev">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                    <div class="slider-btn slider-btn--next">
+                        <img src="./img/arrow-left-br.svg" alt="">
+                    </div>
+                </div>
+                <div class="dots"></div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img ">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./img/extr3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+//= details/footer.html
+//= details/scripts.html
+
+</body>
+</html>
