@@ -5,6 +5,7 @@
     padding-right: 100px !important;
   }
 }
+
 @media screen and (min-width: 2000px) {
   .article-text {
     min-height: 270px;
@@ -33,6 +34,12 @@
 }
 
 @media screen and (max-width: 1700px) {
+  .structure-container {
+    height: 560px;
+  }
+  .structure-pagin .dots {
+    gap: 27px;
+  }
   .timeline-media {
     width: 476px;
   }
@@ -56,6 +63,13 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .structure-container {
+    height: 570px;
+  }
+  .structure-container {
+    width: calc((100% - 295px) + 120px);
+    margin-right: -120px;
+  }
   .contacts-hero {
     .img {
       height: 695px;
@@ -120,9 +134,7 @@
   .news-section {
     padding-top: 96px;
   }
-  .structure-container {
-    height: 600px;
-  }
+
   .structure .container {
     padding: 0 120px 0 219px;
   }
@@ -131,6 +143,9 @@
   }
   .architects-img {
     height: 600px;
+  }
+  .single-structure .txt {
+    padding: 30px 41px 40px 45px;
   }
 }
 
@@ -293,6 +308,13 @@
 }
 
 @media screen and (max-width: 1315px) {
+  .structure-pagin .dots {
+    gap: 20px;
+  }
+  .structure-container {
+    width: calc((100% - 295px) + 44px);
+    margin-right: -44px;
+  }
   .contacts-hero .img {
     height: 500px;
   }
@@ -500,6 +522,22 @@
       }
     }
   }
+  .advantages-right {
+    .tabs-btns {
+      .tabius {
+        p {
+          font-size: 18px;
+          line-height: 1.2;
+        }
+        ul {
+          li {
+            font-size: 18px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
   .advantages-bg p {
     font-size: 12px;
     line-height: 1.2;
@@ -610,7 +648,7 @@
       line-height: 1.2;
     }
   }
-  .hero-project__sizes p {
+  .hero-project__sizes p:first-child {
     font-size: 60px;
     line-height: 1.2;
 
@@ -651,11 +689,14 @@
     padding-bottom: 30px;
     padding-top: 60px;
   }
+  .single-structure .txt {
+    bottom: -40px;
+  }
   .structure-pagin .dots .single-dot {
     padding-bottom: 16px;
   }
   .structure-pagin .dots {
-    gap: 23px;
+    gap: 18px;
   }
   .complex-center .tech-info {
     width: 540px;
@@ -984,6 +1025,20 @@
       }
     }
   }
+  .advantages-right {
+    .tabs-btns {
+      .tabius {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 460px;
+        ul {
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   .advantages-tabs .item-tab, .advantages-tabs .standard-tab {
     max-width: 460px;
   }
@@ -1069,6 +1124,7 @@
     width: 100%;
     justify-content: space-between;
     backdrop-filter: none;
+
     div {
       padding: 18px 25px;
       border-radius: 112px;
@@ -1079,6 +1135,7 @@
       align-items: center;
       justify-content: center;
     }
+
     a {
       //margin-left: 25px;
       //margin-right: 25px;
@@ -1103,6 +1160,47 @@
 }
 
 @media screen and (max-width: 860px) {
+  .structure-container {
+    height: auto;
+  }
+  .struct-cont {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+
+    .single-dot {
+      display: flex;
+      width: calc(100% - 88px);
+      margin-left: 44px;
+      margin-right: 44px;
+    }
+
+    .single-structure {
+      display: none;
+    }
+
+    &.active {
+
+      .single-dot {
+        display: none;
+      }
+
+      .single-structure {
+        display: flex;
+        height: 100vh;
+        min-height: 500px;
+      }
+    }
+  }
+  .single-structure .txt {
+    bottom: 0;
+  }
+  .structure-container {
+    width: calc(100% + 88px);
+    margin-top: 30px;
+    margin-left: -44px;
+    margin-right: -44px;
+  }
   .page404 {
     min-height: 600px;
 
@@ -1352,7 +1450,7 @@
   }
   .structure-container {
     position: relative;
-    height: 100vh;
+    //height: 100vh;
     min-height: 500px;
 
     .btns {
@@ -1533,7 +1631,7 @@
     padding: 0 44px;
   }
   .hero-project__sizes {
-    p {
+    p:first-child {
       color: $main-color;
     }
 
@@ -1617,6 +1715,37 @@
 }
 
 @media screen and (max-width: 720px) {
+  .advantages-tabs {
+    .standard-tab {
+
+    }
+    .item-tab {
+      display: none !important;
+      &.active {
+        display: none !important;
+      }
+    }
+  }
+  .advantages-right {
+    .tabs-btns {
+      .tabius {
+        animation: none !important;
+        padding: 15px 25px 15px 62px;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+      }
+      .tab-btn {
+        &.active {
+          & + .tabius {
+
+            display: flex;
+          }
+        }
+      }
+    }
+  }
   .page404__cont .back-link {
     top: 10px;
     transform: translate(0, 0);
@@ -1645,7 +1774,7 @@
     margin-bottom: 50px;
   }
   .hero-project__sizes {
-    p {
+    p:first-child {
       font-size: 83px;
 
       strong {
@@ -1740,6 +1869,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .structure-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .contacts-hero .txt {
     width: 100%;
     margin-top: 0;
@@ -1970,14 +2104,20 @@
     }
   }
   .structure-container {
-    height: 650px;
+    //height: 570px;
+  }
+  .struct-cont.active .single-structure {
+    height: 570px;
   }
   .center-image .txt {
     padding: 40px 12px 0 44px;
   }
+  .structure-container .slider-btn {
+    top: 170px;
+  }
   .center-image {
-    height: 100vh;
-    min-height: 550px;
+    height: 500px;
+    min-height: 350px;
   }
   .center-image__others {
     width: 100%;
@@ -2023,6 +2163,18 @@
   }
   .center-image {
     margin-top: 56px;
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-items: flex-start;
+
+      img {
+        object-fit: initial;
+        width: auto;
+        height: 100%;
+      }
+    }
   }
   .h2 {
     font-size: 38px;
@@ -2116,6 +2268,7 @@
   }
   .single-company-short {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .single-company-short p {
     font-size: 72px;
@@ -2250,6 +2403,16 @@
     height: 78vh;
     min-height: 430px;
     max-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: initial;
+      transform: translate(-8%, 0);
+    }
   }
   .modal-plan {
     padding: 50px 20px;
@@ -2284,18 +2447,26 @@
 }
 
 @media screen and (max-width: 370px) {
-  .hero-project__sizes p {
+  .hero-project__sizes p:first-child {
     font-size: 60px;
     line-height: 1.2;
   }
 }
 
 @media screen and (max-width: 360px) {
+  .single-structure .txt {
+    padding: 20px 10px;
+  }
+  .struct-cont .single-dot {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .contacts-hero .txt {
     padding: 20px;
   }
   .contacts-page .container {
-    padding:  0 20px;
+    padding: 0 20px;
   }
   .article-cont :not(img) {
     font-size: 16px;
@@ -2339,7 +2510,7 @@
     padding: 0 20px;
   }
   .hero-project__sizes {
-    p {
+    p:first-child {
       font-size: 60px;
     }
 
@@ -2524,6 +2695,14 @@
     p, ul li {
       font-size: 14px;
       line-height: 1.2;
+    }
+  }
+  .advantages-right {
+    .tabs-btns .tabius {
+      p, ul li {
+        font-size: 14px;
+        line-height: 1.2;
+      }
     }
   }
   .planning-head {
