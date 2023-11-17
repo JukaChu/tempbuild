@@ -1160,6 +1160,9 @@
 }
 
 @media screen and (max-width: 860px) {
+  .planning-business .item-tab:nth-child(2) .planning-left {
+    padding-top: 4px;
+  }
   .structure-container {
     height: auto;
   }

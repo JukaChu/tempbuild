@@ -3081,7 +3081,13 @@
     }
   }
 }
-
+.planning-business .item-tab {
+  &:nth-child(2) {
+    .planning-left {
+      padding-top: 17px;
+    }
+  }
+}
 .planning-cont {
   width: 100%;
   display: flex;
@@ -3096,31 +3102,61 @@
       width: 100%;
       height: auto;
       display: block;
+      position: relative;
+      .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        pointer-events: none;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
 
       svg {
         width: 100%;
         height: auto;
+        position: relative;
+        z-index: 1;
 
         rect {
           pointer-events: none;
         }
-
-        path {
-          &.btn-mod {
-            z-index: 2;
-            cursor: pointer;
-            fill: #FFFAF5;
-            transition: fill 0.2s ease-out;
-          }
-
-          &:not(.btn-mod) {
+        .btn-mod {
+          cursor: pointer;
+          path:not(.fill-path) {
             pointer-events: none;
           }
-
+          .fill-path {
+            fill: #FFFAF5 !important;
+            transition: fill 0.2s ease-out;
+          }
           &:hover {
-            fill: #EDE0DB;
+            .fill-path {
+              fill: #EDE0DB !important;
+            }
           }
         }
+        //path {
+        //  &.btn-mod {
+        //    z-index: 2;
+        //    cursor: pointer;
+        //    fill: #FFFAF5;
+        //    transition: fill 0.2s ease-out;
+        //  }
+        //
+        //  &:not(.btn-mod) {
+        //    pointer-events: none;
+        //  }
+        //
+        //  &:hover {
+        //    fill: #EDE0DB;
+        //  }
+        //}
       }
     }
   }
